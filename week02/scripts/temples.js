@@ -57,15 +57,13 @@ function updateFooter() {
     if (lastModifiedElement) {
         lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
     }
-}
+}  
 
 
 // Initialize all functionality when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initHamburgerMenu();
     updateFooter();
-    // handleImageErrors();
-    // handleResponsiveMenu();
     
     console.log('Temple Album initialized successfully');
 });

@@ -59,7 +59,7 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-light);
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;  
 }
 
 /* Navigation styles - Mobile First */
