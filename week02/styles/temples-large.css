@@ -1,0 +1,129 @@
+
+/* Media query for tablets and larger devices */
+@media screen and (min-width: 768px) {
+    /* Header adjustments */
+    .header-content {
+        padding: 0 2rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }  
+
+    /* Navigation styles - Desktop */
+    nav {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        box-shadow: none;
+        gap: 0;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        border-bottom: none;
+        margin: 0 0.25rem;
+    }
+
+    .nav-menu li a {
+        padding: 0.75rem 1.25rem;
+        border-radius: 6px;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav-menu li a::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: var(--accent-color);
+        transition: var(--transition);
+        transform: translateX(-50%);
+    }
+
+    .nav-menu li a:hover {
+        background-color: transparent;
+        color: var(--text-light);
+        padding-left: 1.25rem;
+        transform: translateY(-2px);
+    }
+
+    .nav-menu li a:hover::before {
+        width: 80%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* Main content adjustments */
+    main {
+        padding: 0 2rem;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Grid layout - 2 columns for tablets */
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .temple-img {
+        height: 280px;
+    }
+}
+
+/* Media query for desktop screens */
+@media screen and (min-width: 1024px) {
+    /* Grid layout - 3 columns for desktop */
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .temple-img {
+        height: 260px;
+    }
+
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Media query for large desktop screens */
+@media screen and (min-width: 1200px) {
+    .temple-grid {
+        gap: 3rem;
+    }
+    
+    .temple-img {
+        height: 300px;
+    }
+}
+
+
+/* Footer adjustment for larger screens */
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 2.5rem 1rem;
+    }
+    
+    footer p {
+        font-size: 1rem;
+    }
+}
