@@ -1,0 +1,27 @@
+/* temples-large.css - larger screens */
+
+@media (min-width: 768px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .temple-info h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/*  */
