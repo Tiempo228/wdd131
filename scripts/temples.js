@@ -1,3 +1,4 @@
+/* temples.js file */
 
 // Hamburger menu functionality
 const hamburger = document.getElementById('hamburger');
@@ -6,10 +7,10 @@ const navMenu = document.getElementById('nav-menu');
 function toggleMenu() {
     const isActive = navMenu.classList.toggle('active');
     hamburger.textContent = isActive ? '✕' : '☰';
-    hamburger.setAttribute('aria-expanded', isActive);
+    hamburger.setAttribute('aria-expanded', isActive); 
 }
 
-// Initialize hamburger menu
+// Initialize hamburger menu 
 function initHamburgerMenu() {
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', toggleMenu);
@@ -19,7 +20,7 @@ function initHamburgerMenu() {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
                 hamburger.textContent = '☰';
-                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.setAttribute('aria-expanded', 'false'); 
             });
         });
         
@@ -40,12 +41,12 @@ function initHamburgerMenu() {
                 hamburger.textContent = '☰';
                 hamburger.setAttribute('aria-expanded', 'false');
             }
-        });
+        }); 
     }
 }
 
 // Update footer with current year and last modified date
-function updateFooter() {
+function updateFooter() { 
     // Update copyright year
     const currentYearElement = document.getElementById('currentyear');
     if (currentYearElement) {
@@ -60,7 +61,7 @@ function updateFooter() {
 }  
 
 
-// Initialize all functionality when DOM is loaded
+// Initialize all functionality when DOM is loaded 
 document.addEventListener('DOMContentLoaded', function() {
     initHamburgerMenu();
     updateFooter();

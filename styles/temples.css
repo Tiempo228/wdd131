@@ -1,3 +1,4 @@
+/* temples.css file */
 
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
@@ -27,7 +28,7 @@ body {
     color: var(--text-color);
     background-color: var(--light-color);
     min-height: 100vh;
-    display: flex;
+    display: flex; 
     flex-direction: column;
 }
 
