@@ -19,6 +19,6 @@ last_m = document.getElementById("lastModified");
 document.getElementById("lastModified").innerHTML = "Last Modified: " + document.lastModified;
 
 // style the last modified p element
-last_m.style.color = "#e6be04";
+last_m.style.color = "#e6be04"; 
 
  

@@ -1,3 +1,5 @@
+/* Base.css code */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -63,14 +65,14 @@ main h1{
    
 }
 
-.card-container {
+.card-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* grid-template-columns: 1fr 1fr; */
     gap: 2rem;
 }
 
-.card {
+.card{
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,7 +83,7 @@ main h1{
 .card h2{
     text-align: center;
     background-color: #e6be04;
-    padding: .5rem 0;
+    padding: .5rem 0; 
 }
 
 .card-content {
