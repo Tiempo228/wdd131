@@ -10,7 +10,7 @@ spanElem.textContent = year;
 
 // adding a color style to the element
 
-spanElem.style.color = "#e6be04";
+spanElem.style.color = "#e6be04";   
 
 // get the last modified p element
 last_m = document.getElementById("lastModified");
